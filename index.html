@@ -1,0 +1,1770 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenon Yuri Silva - Desenvolvedor e Instrutor Técnico</title>
+    <meta name="description"
+        content="Portfólio profissional de Lenon Yuri Silva, Desenvolvedor e Instrutor Técnico com experiência em Java, Python, PHP e gestão de projetos.">
+    <!-- Meta tags para SEO e compartilhamento -->
+    <meta property="og:title" content="Lenon Yuri Silva - Desenvolvedor e Instrutor Técnico">
+    <meta property="og:description"
+        content="Portfólio profissional de Lenon Yuri Silva, Desenvolvedor e Instrutor Técnico com experiência em Java, Python, PHP e gestão de projetos.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seusite.com">
+    <meta name="theme-color" content="#8a63d2">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Preload para melhor performance -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="css/styles.css" as="style">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" style="opacity: 0;">
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#" aria-label="Página inicial">
+                <span class="d-inline-block align-middle">Lenon Yuri Silva</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"><i class="bi bi-person-fill me-1"
+                                aria-hidden="true"></i>Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience"><i class="bi bi-briefcase-fill me-1"
+                                aria-hidden="true"></i>Experiência</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education"><i class="bi bi-book-fill me-1"
+                                aria-hidden="true"></i>Formação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills"><i class="bi bi-tools me-1"
+                                aria-hidden="true"></i>Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects"><i class="bi bi-code-square me-1"
+                                aria-hidden="true"></i>Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"><i class="bi bi-envelope-fill me-1"
+                                aria-hidden="true"></i>Contato</a>
+                    </li>
+                    <li class="nav-item ms-2 d-flex align-items-center">
+                        <button id="themeToggle" class="btn btn-sm theme-toggle"
+                            aria-label="Alternar modo escuro/claro">
+                            <i class="bi bi-moon-fill"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero text-center py-5">
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold">Lenon Yuri Silva</h1>
+            <p class="lead mb-4">Desenvolvedor Full Stack | Instrutor Técnico SENAI</p>
+            <div class="hero-badges mb-4">
+                <span class="badge me-2"><i class="bi bi-database"></i> MySQL</span>
+                <span class="badge me-2"><i class="bi bi-filetype-java"></i> Java</span>
+                <span class="badge me-2"><i class="bi bi-filetype-js"></i> JavaScript</span>
+                <span class="badge me-2"><i class="bi bi-filetype-php"></i> PHP</span>
+                <span class="badge me-2"><i class="bi bi-filetype-c"></i> C</span>
+                <span class="badge me-2"><i class="bi bi-filetype-cpp"></i> C++</span>
+                <span class="badge me-2"><i class="bi bi-filetype-py"></i> Python</span>
+                <span class="badge me-2"><i class="bi bi-kanban"></i> SCRUM</span>
+                <span class="badge me-2"><i class="bi bi-kanban"></i> Trello</span>
+                <span class="badge me-2"><i class="bi bi-github"></i> GitHub</span>
+                <span class="badge me-2"><i class="bi bi-filetype-rs"></i> Rust</span>
+                <span class="badge me-2"><i class="bi bi-filetype-html"></i> HTML</span>
+                <span class="badge me-2"><i class="bi bi-filetype-css"></i> CSS</span>
+                <span class="badge me-2"><i class="bi bi-ubuntu"></i> Ubuntu</span>
+                <span class="badge me-2"><i class="bi bi-terminal"></i> Shell Script</span>
+                <span class="badge me-2"><i class="bi bi-react"></i> React</span>
+                <span class="badge"><i class="bi bi-laravel"></i> Laravel</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Sobre Mim</h2>
+                    <p class="lead">Profissional com dupla formação em <strong>Administração</strong> e <strong>Sistemas
+                            de Informação</strong>, combinando habilidades técnicas e gerenciais para desenvolver
+                        soluções inovadoras.</p>
+
+                    <div class="about-details mt-4">
+                        <div class="detail-item">
+                            <i class="bi bi-person-badge-fill me-2" aria-hidden="true"></i>
+                            <span><strong>Idade:</strong> 28 anos</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="bi bi-geo-alt-fill me-2" aria-hidden="true"></i>
+                            <span><strong>Localização:</strong> Uberaba, MG</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="bi bi-mortarboard-fill me-2" aria-hidden="true"></i>
+                            <span><strong>Formação:</strong> Bacharel em Administração e Sistemas de Informação</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="bi bi-briefcase-fill me-2" aria-hidden="true"></i>
+                            <span><strong>Experiência:</strong> 5+ anos na área de TI</span>
+                        </div>
+                    </div>
+
+                    <h3 class="mt-5 mb-3">Objetivo Profissional</h3>
+                    <div class="professional-goal">
+                        <p>Como <strong>Desenvolvedor Full Stack</strong> e <strong>Instrutor Técnico</strong>, busco
+                            oportunidades para:</p>
+
+                        <ul class="goal-highlights">
+                            <li><i class="bi bi-code-square"></i> Desenvolver soluções inovadoras que resolvam problemas
+                                reais</li>
+                            <li><i class="bi bi-people-fill"></i> Contribuir com minha experiência em ensino para
+                                capacitar equipes</li>
+                            <li><i class="bi bi-lightbulb"></i> Participar de projetos desafiadores que utilizem
+                                tecnologias emergentes</li>
+                            <li><i class="bi bi-arrow-repeat"></i> Aplicar metodologias ágeis para entregas de qualidade
+                            </li>
+                        </ul>
+
+                        <p>Tenho especial interesse em ambientes que valorizem:</p>
+
+                        <div class="badges-container mb-3">
+                            <span class="badge"><i class="bi bi-git"></i> Boas práticas de desenvolvimento</span>
+                            <span class="badge"><i class="bi bi-kanban"></i> Trabalho colaborativo</span>
+                            <span class="badge"><i class="bi bi-graph-up"></i> Aprendizado contínuo</span>
+                        </div>
+
+                        <blockquote class="goal-quote">
+                            <p class="mb-0">"Acredito que a tecnologia deve ser acessível e transformadora, combinando
+                                excelência técnica com impacto social."</p>
+                        </blockquote>
+                    </div>
+                    <div class="mt-4">
+                        <a href="#contact" class="btn btn-primary me-2">Entrar em Contato</a>
+                        <a href="#projects" class="btn btn-outline-primary">Ver Projetos</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Principais Competências</h4>
+                            <ul class="competence-list">
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Desenvolvimento de sistemas educacionais</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Instrução técnica em programação</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Gestão de projetos ágeis</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Análise e automação de processos</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Desenvolvimento full stack</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    <span>Integração de sistemas</span>
+                                </li>
+                            </ul>
+
+                            <h5 class="mt-4 mb-3">Certificações</h5>
+                            <div class="certifications">
+                                <span class="badge me-2 mb-2">HTML/CSS3 - Estácio</span>
+                                <span class="badge me-2 mb-2">Lógica de Programação</span>
+                                <span class="badge me-2 mb-2">Processos Administrativos - SENAI</span>
+                                <span class="badge me-2 mb-2">Sei Planejar - SEBRAE</span>
+                                <span class="badge me-2 mb-2">Inglês - Open English</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5 section-bg experience-section">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">Trajetória Profissional</h2>
+
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="timeline">
+                        <!-- SENAI -->
+                        <div class="timeline-item">
+                            <div class="timeline-badge">
+                                <i class="bi bi-mortarboard" aria-hidden="true"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3>Instrutor de Desenvolvimento de Sistemas</h3>
+                                    <h4>SENAI Minas Gerais | Out 2022 - Atual</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Ministro capacitação técnica em programação para formação de desenvolvedores,
+                                        alinhando o ensino às demandas do mercado de tecnologia.</p>
+
+                                    <h5>Principais Atribuições:</h5>
+                                    <ul>
+                                        <li>Lecionar disciplinas de programação (Java, Python, JavaScript, PHP) e
+                                            tecnologias web (HTML/CSS, React.js)</li>
+                                        <li>Desenvolver currículos e materiais didáticos com projetos práticos</li>
+                                        <li>Implementar metodologias ativas de aprendizagem baseadas em problemas reais
+                                        </li>
+                                        <li>Orientar alunos no desenvolvimento de projetos finais com aplicação
+                                            industrial</li>
+                                        <li>Monitorar desempenho e adaptar abordagens pedagógicas</li>
+                                    </ul>
+
+                                    <h5>Destaques e Contribuições:</h5>
+                                    <ul>
+                                        <li>Modernização curricular com inclusão de Git, metodologias ágeis e boas
+                                            práticas</li>
+                                        <li>Criação de laboratórios práticos simulando ambientes de desenvolvimento
+                                            reais</li>
+                                        <li>Desenvolvimento de sistema didático de gestão escolar com componentes de IA
+                                        </li>
+                                        <li>Parcerias com empresas para projetos baseados em desafios reais do setor
+                                        </li>
+                                    </ul>
+
+                                    <div class="technologies mt-4">
+                                        <span class="badge"><i class="bi bi-filetype-java"></i> Java</span>
+                                        <span class="badge"><i class="bi bi-filetype-py"></i> Python</span>
+                                        <span class="badge"><i class="bi bi-filetype-php"></i> PHP</span>
+                                        <span class="badge"><i class="bi bi-database"></i> MySQL</span>
+                                        <span class="badge"><i class="bi bi-filetype-html"></i> HTML/CSS</span>
+                                        <span class="badge"><i class="bi bi-filetype-js"></i> JavaScript</span>
+                                        <span class="badge"><i class="bi bi-kanban"></i> SCRUM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- BDMG -->
+                        <div class="timeline-item">
+                            <div class="timeline-badge">
+                                <i class="bi bi-bank2" aria-hidden="true"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3>Analista de Desenvolvimento</h3>
+                                    <h4>Banco de Desenvolvimento de Minas Gerais | Mar 2021 - Out 2022</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Atuei no suporte técnico especializado e desenvolvimento de soluções para
+                                        operações de crédito e fomento empresarial.</p>
+
+                                    <h5>Principais Atribuições:</h5>
+                                    <ul>
+                                        <li>Suporte técnico avançado para correspondentes bancários</li>
+                                        <li>Análise e solução de problemas em operações de financiamento</li>
+                                        <li>Mediação técnica entre áreas comerciais e usuários finais</li>
+                                    </ul>
+
+                                    <h5>Destaques:</h5>
+                                    <ul>
+                                        <li>Padronização de procedimentos técnicos para correspondentes bancários</li>
+                                    </ul>
+
+                                    <div class="technologies mt-4">
+                                        <span class="badge"><i class="bi bi-cash-stack"></i> Processos Bancários</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- IGTI -->
+                        <div class="timeline-item">
+                            <div class="timeline-badge">
+                                <i class="bi bi-people" aria-hidden="true"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3>Monitor de Turmas em Tecnologia</h3>
+                                    <h4>IGTI | Nov 2020 - Fev 2021</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Atuei como facilitador de aprendizagem em bootcamps de programação, auxiliando na
+                                        jornada educacional de estudantes.</p>
+
+                                    <h5>Principais Atribuições:</h5>
+                                    <ul>
+                                        <li>Acompanhamento pedagógico de turmas em cursos intensivos de tecnologia</li>
+                                        <li>Mediação de fóruns de discussão e suporte técnico aos alunos</li>
+                                        <li>Monitoramento de progresso e identificação de dificuldades de aprendizagem
+                                        </li>
+                                        <li>Produção de relatórios analíticos sobre desempenho das turmas</li>
+                                        <li>Facilitação da comunicação entre alunos, professores e coordenação</li>
+                                    </ul>
+
+                                    <h5>Destaques:</h5>
+                                    <ul>
+                                        <li>Desenvolvimento de materiais de apoio complementares para alunos com
+                                            dificuldades</li>
+                                        <li>Implementação de sistema de acompanhamento individualizado</li>
+                                    </ul>
+
+                                    <div class="technologies mt-4">
+                                        <span class="badge"><i class="bi bi-journal-bookmark"></i> Gestão
+                                            Educacional</span>
+                                        <span class="badge"><i class="bi bi-laptop"></i> EAD</span>
+                                        <span class="badge"><i class="bi bi-chat-left-text"></i> Mediação
+                                            Pedagógica</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FUNDEP/HRTN -->
+                        <div class="timeline-item">
+                            <div class="timeline-badge">
+                                <i class="bi bi-clipboard2-pulse" aria-hidden="true"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3>Desenvolvedor de Sistemas Hospitalares</h3>
+                                    <h4>FUNDEP/HRTN | Jul 2020 - Dez 2020</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Participei do desenvolvimento e manutenção de sistemas de informação hospitalar,
+                                        com foco em formulários médicos eletrônicos.</p>
+
+                                    <h5>Principais Atribuições:</h5>
+                                    <ul>
+                                        <li>Desenvolvimento de formulários médicos no sistema MV SOUL</li>
+                                        <li>Implementação de regras de negócio e fluxos de trabalho em SQL</li>
+                                        <li>Testes de usabilidade em colaboração com a equipe médica</li>
+                                        <li>Documentação técnica de processos e sistemas</li>
+                                        <li>Suporte aos usuários e treinamento básico do sistema</li>
+                                    </ul>
+
+                                    <h5>Destaques:</h5>
+                                    <ul>
+                                        <li>Modernização de formulários de prontuário eletrônico</li>
+                                        <li>Otimização de fluxos de trabalho para equipe médica</li>
+                                    </ul>
+
+                                    <div class="technologies mt-4">
+                                        <span class="badge"><i class="bi bi-clipboard2-pulse"></i> MV SOUL</span>
+                                        <span class="badge"><i class="bi bi-database"></i> SQL</span>
+                                        <span class="badge"><i class="bi bi-hospital"></i> Sistemas Hospitalares</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- COPASA -->
+                        <div class="timeline-item">
+                            <div class="timeline-badge">
+                                <i class="bi bi-files" aria-hidden="true"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3>Assistente Administrativo</h3>
+                                    <h4>COPASA | Ago 2018 - Jul 2020</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Atuei na gestão documental e processos administrativos, desenvolvendo
+                                        competências em organização e atendimento ao cliente.</p>
+
+                                    <h5>Principais Atribuições:</h5>
+                                    <ul>
+                                        <li>Gestão de documentos e arquivos físicos e digitais</li>
+                                        <li>Atendimento ao cliente interno e externo</li>
+                                        <li>Controle de processos de cadastro e ordens de serviço</li>
+                                        <li>Organização e manutenção de sistemas de arquivamento</li>
+                                        <li>Apoio na elaboração de relatórios e planilhas gerenciais</li>
+                                    </ul>
+
+                                    <h5>Destaques:</h5>
+                                    <ul>
+                                        <li>Implantação de sistema de classificação documental</li>
+                                        <li>Otimização de fluxos de trabalho administrativos</li>
+                                    </ul>
+
+                                    <div class="technologies mt-4">
+                                        <span class="badge"><i class="bi bi-folder"></i> Gestão Documental</span>
+                                        <span class="badge"><i class="bi bi-person-lines-fill"></i> Atendimento</span>
+                                        <span class="badge"><i class="bi bi-diagram-3"></i> Processos
+                                            Administrativos</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5 section-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Formação Acadêmica</h2>
+                <p class="lead text-muted">Minha jornada de aprendizado e desenvolvimento contínuo</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- IFMG -->
+                <div class="col-lg-6">
+                    <div class="education-card card h-100 shadow-lg">
+                        <div class="card-header bg-gradient-primary">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h3 class="mb-0">Bacharelado em Administração</h3>
+                                    <div class="d-flex align-items-center mt-2">
+                                        <i class="fas fa-university me-2"></i>
+                                        <span>IFMG - Campus Ribeirão das Neves</span>
+                                    </div>
+                                </div>
+                                <div class="education-period badge bg-white text-primary">
+                                    <i class="far fa-calendar-alt me-1"></i> 2019 - 2022
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="education-highlights">
+                                <h5 class="text-primary"><i class="fas fa-trophy me-2"></i>Destaques Acadêmicos</h5>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fas fa-chevron-right text-secondary"></i></span>
+                                        <strong>Diretor de Projetos</strong> na Neves Consultoria Jr. - Liderança de
+                                        equipes e gestão de projetos de consultoria para micro e pequenas empresas
+                                    </li>
+                                    <li><span class="fa-li"><i class="fas fa-chevron-right text-secondary"></i></span>
+                                        <strong>Representante discente</strong> na Comissão Própria de Avaliação (CPA) -
+                                        Atuação na avaliação institucional e melhoria contínua
+                                    </li>
+                                    <li><span class="fa-li"><i class="fas fa-chevron-right text-secondary"></i></span>
+                                        <strong>Palestrante</strong> na Semana Nacional de Ciência e Tecnologia (SNCT) -
+                                        Ministrei workshops sobre empreendedorismo
+                                    </li>
+                                    <li><span class="fa-li"><i class="fas fa-chevron-right text-secondary"></i></span>
+                                        <strong>Tutor acadêmico</strong> nas disciplinas de Seminários, História II e
+                                        Sociologia Aplicada à Administração
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="education-projects mt-4">
+                                <h5 class="text-primary"><i class="fas fa-lightbulb me-2"></i>Projeto Relevante</h5>
+                                <div class="project-card p-3 rounded">
+                                    <h6>"Cesta Básica e Inflação em Ribeirão das Neves"</h6>
+                                    <p class="mb-1">Pesquisa de campo sobre variação de preços e poder de compra da
+                                        população local, apresentada no congresso interno de administração.</p>
+                                    <span class="badge bg-primary mt-2">Metodologia Científica</span>
+                                    <span class="badge bg-primary mt-2">Análise de Dados</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Estácio -->
+                <div class="col-lg-6">
+                    <div class="education-card card h-100 shadow-lg">
+                        <div class="card-header bg-gradient-primary">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h3 class="mb-0">Bacharelado em Sistemas de Informação</h3>
+                                    <div class="d-flex align-items-center mt-2">
+                                        <i class="fas fa-university me-2"></i>
+                                        <span>Universidade Estácio de Sá - BH</span>
+                                    </div>
+                                </div>
+                                <div class="education-period badge bg-white text-primary">
+                                    <i class="far fa-calendar-alt me-1"></i> 2017 - 2021
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="education-skills">
+                                <h5 class="text-primary"><i class="fas fa-code me-2"></i>Habilidades Desenvolvidas</h5>
+                                <div class="skills-grid">
+                                    <!-- Fundamentos -->
+                                    <div class="skill-item">
+                                        <i class="fas fa-code text-secondary"></i>
+                                        <span>Lógica de Programação</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-calculator text-secondary"></i>
+                                        <span>Matemática Computacional</span>
+                                    </div>
+
+                                    <!-- Desenvolvimento -->
+                                    <div class="skill-item">
+                                        <i class="fab fa-js text-secondary"></i>
+                                        <span>Programação Web (HTML/CSS/JS)</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fab fa-java text-secondary"></i>
+                                        <span>Programação Orientada a Objetos</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-mobile-alt text-secondary"></i>
+                                        <span>Desenvolvimento Mobile</span>
+                                    </div>
+
+                                    <!-- Banco de Dados -->
+                                    <div class="skill-item">
+                                        <i class="fas fa-database text-secondary"></i>
+                                        <span>Modelagem de Dados</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-server text-secondary"></i>
+                                        <span>Administração de Bancos</span>
+                                    </div>
+
+                                    <!-- Engenharia -->
+                                    <div class="skill-item">
+                                        <i class="fas fa-project-diagram text-secondary"></i>
+                                        <span>Engenharia de Software</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-sitemap text-secondary"></i>
+                                        <span>Arquitetura de Sistemas</span>
+                                    </div>
+
+                                    <!-- IA e Dados -->
+                                    <div class="skill-item">
+                                        <i class="fas fa-brain text-secondary"></i>
+                                        <span>Inteligência Artificial</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-chart-line text-secondary"></i>
+                                        <span>Ciência de Dados</span>
+                                    </div>
+
+                                    <!-- Redes e Segurança -->
+                                    <div class="skill-item">
+                                        <i class="fas fa-network-wired text-secondary"></i>
+                                        <span>Redes de Computadores</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-shield-alt text-secondary"></i>
+                                        <span>Segurança da Informação</span>
+                                    </div>
+
+                                    <!-- Gestão -->
+                                    <div class="skill-item">
+                                        <i class="fas fa-tasks text-secondary"></i>
+                                        <span>Metodologias Ágeis</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-users-cog text-secondary"></i>
+                                        <span>Gestão de TI</span>
+                                    </div>
+
+                                    <!-- Sistemas -->
+                                    <div class="skill-item">
+                                        <i class="fas fa-cogs text-secondary"></i>
+                                        <span>Sistemas Operacionais</span>
+                                    </div>
+                                    <div class="skill-item">
+                                        <i class="fas fa-cloud text-secondary"></i>
+                                        <span>Computação em Nuvem</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Técnico -->
+                <div class="col-lg-8 col-xl-6 mx-auto"> <!-- Centralizado e com largura controlada -->
+                    <div class="education-card card shadow-lg">
+                        <div class="card-header bg-gradient-primary">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h3 class="mb-0">Técnico em Informática</h3>
+                                    <div class="d-flex align-items-center mt-2">
+                                        <i class="fas fa-graduation-cap me-2"></i>
+                                        <span>Colégio Tiradentes (PRONATEC) - Belo Horizonte/MG</span>
+                                    </div>
+                                </div>
+                                <div class="education-period badge bg-white text-primary">
+                                    <i class="far fa-calendar-alt me-1"></i> 2013 - 2014
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 class="text-primary"><i class="fas fa-cogs me-2"></i>Hardware & Redes</h5>
+                                    <ul class="fa-ul">
+                                        <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>
+                                            Montagem e manutenção de computadores
+                                        </li>
+                                        <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>
+                                            Configuração e manutenção de redes locais
+                                        </li>
+                                        <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>
+                                            Instalação de sistemas operacionais
+                                        </li>
+                                        <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>
+                                            Diagnóstico e solução de problemas de hardware
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5 class="text-primary"><i class="fas fa-code me-2"></i>Programação</h5>
+                                    <ul class="fa-ul">
+                                        <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>
+                                            Lógica de programação e algoritmos
+                                        </li>
+                                        <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>
+                                            Desenvolvimento desktop básico
+                                        </li>
+                                        <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>
+                                            Fundamentos de banco de dados
+                                        </li>
+                                        <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>
+                                            Programação web básica (HTML/CSS)
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-md-6">
+                                    <h5 class="text-primary"><i class="fas fa-tools me-2"></i>Ferramentas</h5>
+                                    <ul class="fa-ul">
+                                        <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>
+                                            Pacote Office avançado
+                                        </li>
+                                        <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>
+                                            Virtualização de sistemas
+                                        </li>
+                                        <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>
+                                            Softwares de diagnóstico
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5 class="text-primary"><i class="fas fa-user-tie me-2"></i>Atividades</h5>
+                                    <ul class="fa-ul">
+                                        <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>
+                                            Suporte técnico a usuários
+                                        </li>
+                                        <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>
+                                            Documentação técnica
+                                        </li>
+                                        <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span>
+                                            Projeto integrador final
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 section-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Habilidades Técnicas</h2>
+                <p class="lead text-muted">Competências desenvolvidas ao longo da minha carreira profissional</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Coluna Esquerda -->
+                <div class="col-lg-6">
+                    <!-- Linguagens de Programação -->
+                    <div class="skill-card card shadow-sm">
+                        <div class="card-header bg-gradient-primary">
+                            <h4 class="mb-0 text-white"><i class="fas fa-code me-2"></i>Linguagens de Programação</h4>
+                        </div>
+                        <div class="card-body">
+                            <!-- Java -->
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fab fa-java text-primary"></i>
+                                    <div>
+                                        <h5>Java</h5>
+                                        <p class="skill-description">Desenvolvimento de aplicações empresariais com
+                                            Spring Boot, JPA/Hibernate e arquitetura MVC.</p>
+                                    </div>
+                                </div>
+                                <div class="skill-tags">
+                                    <span class="badge bg-light text-dark">Spring Boot</span>
+                                    <span class="badge bg-light text-dark">JPA</span>
+                                    <span class="badge bg-light text-dark">Maven</span>
+                                </div>
+                            </div>
+
+                            <!-- Python -->
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fab fa-python text-primary"></i>
+                                    <div>
+                                        <h5>Python</h5>
+                                        <p class="skill-description">Automação de processos e análise de dados com
+                                            Pandas/NumPy. Desenvolvimento web com Django.</p>
+                                    </div>
+                                </div>
+                                <div class="skill-tags">
+                                    <span class="badge bg-light text-dark">Django</span>
+                                    <span class="badge bg-light text-dark">Pandas</span>
+                                    <span class="badge bg-light text-dark">Automação</span>
+                                </div>
+                            </div>
+
+                            <!-- JavaScript -->
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fab fa-js text-primary"></i>
+                                    <div>
+                                        <h5>JavaScript</h5>
+                                        <p class="skill-description">Desenvolvimento front-end com React.js e Vue.js.
+                                            Domínio de ES6+ e consumo de APIs REST.</p>
+                                    </div>
+                                </div>
+                                <div class="skill-tags">
+                                    <span class="badge bg-light text-dark">React</span>
+                                    <span class="badge bg-light text-dark">Node.js</span>
+                                    <span class="badge bg-light text-dark">TypeScript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna Direita - Parte Superior -->
+                <div class="col-lg-6">
+                    <!-- Banco de Dados -->
+                    <div class="skill-card card shadow-sm">
+                        <div class="card-header bg-gradient-primary">
+                            <h4 class="mb-0 text-white"><i class="fas fa-database me-2"></i>Banco de Dados</h4>
+                        </div>
+                        <div class="card-body">
+                            <!-- MySQL -->
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fas fa-database text-primary"></i>
+                                    <div>
+                                        <h5>MySQL & PostgreSQL</h5>
+                                        <p class="skill-description">Modelagem relacional avançada e otimização de
+                                            queries complexas.</p>
+                                    </div>
+                                </div>
+                                <div class="skill-tags">
+                                    <span class="badge bg-light text-dark">Modelagem</span>
+                                    <span class="badge bg-light text-dark">Otimização</span>
+                                    <span class="badge bg-light text-dark">SQL</span>
+                                </div>
+                            </div>
+
+                            <!-- MongoDB -->
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <i class="fas fa-fire text-primary"></i>
+                                    <div>
+                                        <h5>MongoDB</h5>
+                                        <p class="skill-description">Desenvolvimento de aplicações NoSQL com esquemas
+                                            flexíveis e agregações.</p>
+                                    </div>
+                                </div>
+                                <div class="skill-tags">
+                                    <span class="badge bg-light text-dark">NoSQL</span>
+                                    <span class="badge bg-light text-dark">Aggregation</span>
+                                    <span class="badge bg-light text-dark">Mongoose</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segunda Linha -->
+                <div class="col-lg-6">
+                    <!-- Desenvolvimento Web -->
+                    <div class="skill-card card shadow-sm">
+                        <div class="card-header bg-gradient-primary">
+                            <h4 class="mb-0 text-white"><i class="fas fa-laptop-code me-2"></i>Desenvolvimento Web</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="web-skill">
+                                        <i class="fab fa-html5 text-danger fa-2x"></i>
+                                        <h6 class="mt-2">HTML5 Semântico</h6>
+                                        <p class="small">Estruturação acessível com elementos semânticos</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="web-skill">
+                                        <i class="fab fa-css3-alt text-primary fa-2x"></i>
+                                        <h6 class="mt-2">CSS3 Avançado</h6>
+                                        <p class="small">Flexbox, Grid Layout e design responsivo</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="web-skill">
+                                        <i class="fab fa-react text-info fa-2x"></i>
+                                        <h6 class="mt-2">React.js</h6>
+                                        <p class="small">Componentes funcionais e Hooks</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="web-skill">
+                                        <i class="fab fa-bootstrap text-purple fa-2x"></i>
+                                        <h6 class="mt-2">Bootstrap 5</h6>
+                                        <p class="small">Interfaces responsivas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- Outras Competências -->
+                    <div class="skill-card card shadow-sm">
+                        <div class="card-header bg-gradient-primary">
+                            <h4 class="mb-0 text-white"><i class="fas fa-tools me-2"></i>Outras Competências</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="skills-cloud">
+                                <span class="skill-badge bg-primary">Git</span>
+                                <span class="skill-badge bg-secondary">Metodologias Ágeis</span>
+                                <span class="skill-badge bg-success">Docker</span>
+                                <span class="skill-badge bg-info">CI/CD</span>
+                                <span class="skill-badge bg-dark">Testes</span>
+                                <span class="skill-badge bg-info">Shell Script</span>
+                                <span class="skill-badge bg-dark">IoT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Meus Projetos</h2>
+            <p class="text-center mb-5 section-intro">Aqui estão alguns dos projetos que desenvolvi, tanto acadêmicos
+                quanto pessoais, demonstrando minhas habilidades e experiência em diversas tecnologias.</p>
+
+            <!-- Projetos de Ensino -->
+            <div class="row mb-5">
+                <div class="col-12 mb-4">
+                    <h3 class="section-subtitle mb-4"><i class="bi bi-mortarboard-fill me-2"
+                            aria-hidden="true"></i>Projetos Educacionais</h3>
+                    <p class="section-description">Projetos desenvolvidos para o ambiente educacional, incluindo
+                        materiais didáticos e sistemas para instituições de ensino.</p>
+                </div>
+
+                <!-- Sistema de Gestão de Estoque -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow project-card">
+                        <div class="card-header bg-info text-white">
+                            <h4 class="mb-0">Sistema de Gestão de Estoque</h4>
+                            <div class="project-meta">
+                                <span class="badge bg-light text-dark me-1">Java</span>
+                                <span class="badge bg-light text-dark me-1">Spring Boot</span>
+                                <span class="badge bg-light text-dark">React</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="project-image mb-3">
+                                <img src="https://via.placeholder.com/300x200?text=Inventory+System"
+                                    alt="Sistema de Gestão de Estoque" class="img-fluid rounded">
+                            </div>
+                            <h5 class="project-subtitle">Visão Geral</h5>
+                            <p class="card-text">O Sistema de Gestão de Estoque Escolar é uma aplicação web desenvolvida
+                                para gerenciar o estoque de materiais educacionais e kits de equipamentos.</p>
+
+                            <h5 class="project-subtitle mt-3">🎯 Objetivo</h5>
+                            <p>Facilitar o gerenciamento do estoque de uma instituição de ensino, garantindo controle
+                                sobre os materiais disponíveis e rastreabilidade por meio de logs detalhados.</p>
+
+                            <div class="accordion mt-3" id="estoqueAccordion">
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseEstoque"
+                                            aria-expanded="false" aria-controls="collapseEstoque">
+                                            <i class="bi bi-list-check me-2"></i>Ver Funcionalidades
+                                        </button>
+                                    </h2>
+                                    <div id="collapseEstoque" class="accordion-collapse collapse"
+                                        data-bs-parent="#estoqueAccordion">
+                                        <div class="accordion-body p-0">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item d-flex align-items-center">
+                                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                    Autenticação e Controle de Acesso
+                                                </li>
+                                                <li class="list-group-item d-flex align-items-center">
+                                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                    Cadastro de Usuários e Recuperação de Senha
+                                                </li>
+                                                <li class="list-group-item d-flex align-items-center">
+                                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                    Gestão de Estoque Completa
+                                                </li>
+                                                <li class="list-group-item d-flex align-items-center">
+                                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                    Solicitação e Aprovação de Kits
+                                                </li>
+                                                <li class="list-group-item d-flex align-items-center">
+                                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                    Gerenciamento de Turmas
+                                                </li>
+                                                <li class="list-group-item d-flex align-items-center">
+                                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                    Auditoria e Logs Detalhados
+                                                </li>
+                                                <li class="list-group-item d-flex align-items-center">
+                                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                                    Integração com IA Fidélis 4.0
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="https://github.com/LYuri26/SistemadeGestao" class="btn btn-info btn-sm"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github me-1"></i>Código Fonte
+                                </a>
+                                <div class="text-muted small">
+                                    <i class="bi bi-calendar me-1"></i>2023
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aulas SENAI -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow project-card">
+                        <div class="card-header bg-info text-white">
+                            <h4 class="mb-0">Materiais Didáticos SENAI</h4>
+                            <div class="project-meta">
+                                <span class="badge bg-light text-dark me-1">Educação</span>
+                                <span class="badge bg-light text-dark">Material Didático</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="project-image mb-3">
+                                <img src="https://via.placeholder.com/300x200?text=Teaching+Materials"
+                                    alt="Materiais Didáticos" class="img-fluid rounded">
+                            </div>
+                            <p class="card-text">Repositórios completos com materiais didáticos desenvolvidos para as
+                                aulas no SENAI, incluindo exemplos de código, exercícios e projetos práticos.</p>
+
+                            <h5 class="project-subtitle mt-3">Disciplinas Disponíveis:</h5>
+                            <div class="disciplines-grid">
+                                <span class="badge bg-light text-dark mb-1 me-1">Java</span>
+                                <span class="badge bg-light text-dark mb-1 me-1">PHP</span>
+                                <span class="badge bg-light text-dark mb-1 me-1">JavaScript/React</span>
+                                <span class="badge bg-light text-dark mb-1 me-1">HTML/CSS</span>
+                                <span class="badge bg-light text-dark mb-1 me-1">C/C++</span>
+                                <span class="badge bg-light text-dark mb-1 me-1">Python</span>
+                                <span class="badge bg-light text-dark mb-1">MySQL</span>
+                            </div>
+
+                            <div class="accordion mt-3" id="aulasAccordion">
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseAulas"
+                                            aria-expanded="false" aria-controls="collapseAulas">
+                                            <i class="bi bi-link-45deg me-2"></i>Acessar Repositórios
+                                        </button>
+                                    </h2>
+                                    <div id="collapseAulas" class="accordion-collapse collapse"
+                                        data-bs-parent="#aulasAccordion">
+                                        <div class="accordion-body p-0">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <a href="https://github.com/LYuri26/AulasJava" target="_blank"
+                                                        rel="noopener noreferrer" class="text-decoration-none">
+                                                        <i class="bi bi-github me-2"></i>Aulas de Java
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="https://github.com/LYuri26/AulasPHP" target="_blank"
+                                                        rel="noopener noreferrer" class="text-decoration-none">
+                                                        <i class="bi bi-github me-2"></i>Aulas de PHP
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="https://github.com/LYuri26/AulasJavaScript" target="_blank"
+                                                        rel="noopener noreferrer" class="text-decoration-none">
+                                                        <i class="bi bi-github me-2"></i>Aulas de JavaScript/React
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="https://github.com/LYuri26/AulasHTML" target="_blank"
+                                                        rel="noopener noreferrer" class="text-decoration-none">
+                                                        <i class="bi bi-github me-2"></i>Aulas de HTML
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="https://github.com/LYuri26/AulasC-CPP" target="_blank"
+                                                        rel="noopener noreferrer" class="text-decoration-none">
+                                                        <i class="bi bi-github me-2"></i>Aulas de C/C++
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="https://github.com/LYuri26/AulasPython" target="_blank"
+                                                        rel="noopener noreferrer" class="text-decoration-none">
+                                                        <i class="bi bi-github me-2"></i>Aulas de Python
+                                                    </a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="https://github.com/LYuri26/AulasMySQL" target="_blank"
+                                                        rel="noopener noreferrer" class="text-decoration-none">
+                                                        <i class="bi bi-github me-2"></i>Aulas de MySQL
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-secondary">
+                                    <i class="bi bi-people-fill me-1"></i>100+ alunos
+                                </span>
+                                <div class="text-muted small">
+                                    <i class="bi bi-calendar me-1"></i>2022-Presente
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jogo Educativo de SCRUM -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow project-card">
+                        <div class="card-header bg-info text-dark">
+                            <h4 class="mb-0">Jogo Educativo de SCRUM</h4>
+                            <div class="project-meta">
+                                <span class="badge bg-light text-dark me-1">JavaScript</span>
+                                <span class="badge bg-light text-dark">HTML5</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="project-image mb-3">
+                                <img src="https://via.placeholder.com/300x200?text=SCRUM+Game"
+                                    alt="Jogo Educativo de SCRUM" class="img-fluid rounded">
+                            </div>
+                            <p class="card-text">Jogo desenvolvido para ensinar os princípios das metodologias ágeis e
+                                do framework SCRUM de forma lúdica e interativa.</p>
+
+                            <h5 class="project-subtitle mt-3">Principais Características:</h5>
+                            <ul class="feature-list">
+                                <li class="d-flex align-items-start mb-2">
+                                    <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                    <span>Simulação de sprints e cerimônias ágeis</span>
+                                </li>
+                                <li class="d-flex align-items-start mb-2">
+                                    <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                    <span>Personagens representando papéis no SCRUM</span>
+                                </li>
+                                <li class="d-flex align-items-start mb-2">
+                                    <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                    <span>Desafios baseados em situações reais</span>
+                                </li>
+                                <li class="d-flex align-items-start mb-2">
+                                    <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                    <span>Sistema de pontuação e feedback</span>
+                                </li>
+                                <li class="d-flex align-items-start">
+                                    <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                    <span>Versão online e offline</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="https://github.com/LYuri26/JogoScrum" class="btn btn-info btn-sm"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github me-1"></i>Ver Projeto
+                                </a>
+                                <div class="text-muted small">
+                                    <i class="bi bi-calendar me-1"></i>2023
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projetos Pessoais -->
+            <div class="row mb-5">
+                <div class="col-12 mb-4">
+                    <h3 class="section-subtitle mb-4"><i class="bi bi-code-square me-2" aria-hidden="true"></i>Projetos
+                        Pessoais</h3>
+                    <p class="section-description">Projetos desenvolvidos por iniciativa própria para explorar
+                        novas tecnologias e resolver problemas do cotidiano.</p>
+                </div>
+
+                <!-- Fazenda Automatizada -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow project-card">
+                        <div class="card-header bg-danger text-white">
+                            <h4 class="mb-0">Fazenda Automatizada</h4>
+                            <div class="project-meta">
+                                <span class="badge bg-light text-dark me-1">ESP32</span>
+                                <span class="badge bg-light text-dark">IoT</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="project-image mb-3">
+                                <img src="https://via.placeholder.com/300x200?text=Smart+Farm"
+                                    alt="Fazenda Automatizada" class="img-fluid rounded">
+                            </div>
+                            <h5 class="project-subtitle">Visão Geral</h5>
+                            <p class="card-text">Maquete de fazenda automatizada com ESP32 para simular o
+                                funcionamento de painéis solares e automação do sistema elétrico em escala
+                                reduzida.</p>
+
+                            <div class="language-stats mt-3">
+                                <h6 class="mb-2"><i class="bi bi-code-square me-1"></i>Linguagens:</h6>
+                                <div class="progress mb-2" style="height: 20px;">
+                                    <div class="progress-bar bg-cpp" role="progressbar" style="width: 96.6%"
+                                        aria-valuenow="96.6" aria-valuemin="0" aria-valuemax="100">C++ 96.6%
+                                    </div>
+                                </div>
+                                <div class="progress" style="height: 20px;">
+                                    <div class="progress-bar bg-c" role="progressbar" style="width: 3.4%"
+                                        aria-valuenow="3.4" aria-valuemin="0" aria-valuemax="100">C 3.4%</div>
+                                </div>
+                            </div>
+
+                            <h5 class="project-subtitle mt-3">Equipe</h5>
+                            <div class="team-members">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-person-fill me-2"></i>
+                                    <span>Kaua de Jesus Souza</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-person-fill me-2"></i>
+                                    <span>Kayque Soares Marques</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-person-fill me-2"></i>
+                                    <span>Hendryw</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-person-fill me-2"></i>
+                                    <span>Paulo Antonio Mendes Neto</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-person-fill me-2"></i>
+                                    <span>Rian da Silva Santos</span>
+                                </div>
+                            </div>
+
+                            <h5 class="project-subtitle mt-3">Tecnologias Utilizadas</h5>
+                            <ul class="tech-list">
+                                <li class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    <span>ESP32</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    <span>C++, JavaScript, HTML, CSS</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    <span>Visual Studio Code</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    <span>Transistores e Bateria</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    <span>Impressão 3D</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="https://github.com/LYuri26/FazendaAutomatizada" class="btn btn-danger btn-sm"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github me-1"></i>Ver Projeto
+                                </a>
+                                <div class="text-muted small">
+                                    <i class="bi bi-calendar me-1"></i>2023
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reconhecimento Facial -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow project-card">
+                        <div class="card-header bg-danger text-white">
+                            <h4 class="mb-0">Reconhecimento Facial</h4>
+                            <div class="project-meta">
+                                <span class="badge bg-light text-dark me-1">Python</span>
+                                <span class="badge bg-light text-dark">OpenCV</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="project-image mb-3">
+                                <img src="https://via.placeholder.com/300x200?text=Facial+Recognition"
+                                    alt="Reconhecimento Facial" class="img-fluid rounded">
+                            </div>
+                            <h5 class="project-subtitle">Visão Geral</h5>
+                            <p class="card-text">Sistema de reconhecimento facial para controle de acesso nas
+                                catracas do SENAI Uberaba, desenvolvido em ambiente local com banco de dados de
+                                usuários cadastrados.</p>
+
+                            <div class="language-stats mt-3">
+                                <h6 class="mb-2"><i class="bi bi-code-square me-1"></i>Linguagens:</h6>
+                                <div class="progress mb-2" style="height: 20px;">
+                                    <div class="progress-bar bg-python" role="progressbar" style="width: 98.7%"
+                                        aria-valuenow="98.7" aria-valuemin="0" aria-valuemax="100">Python 98.7%
+                                    </div>
+                                </div>
+                                <div class="progress" style="height: 20px;">
+                                    <div class="progress-bar bg-shell" role="progressbar" style="width: 1.3%"
+                                        aria-valuenow="1.3" aria-valuemin="0" aria-valuemax="100">Shell 1.3%
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5 class="project-subtitle mt-3">Equipe</h5>
+                            <div class="team-members">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-person-fill me-2"></i>
+                                    <span>Adilson</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-person-fill me-2"></i>
+                                    <span>Bianca</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-person-fill me-2"></i>
+                                    <span>Davi</span>
+                                </div>
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-person-fill me-2"></i>
+                                    <span>Gabriel</span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-person-fill me-2"></i>
+                                    <span>Sofia</span>
+                                </div>
+                            </div>
+
+                            <h5 class="project-subtitle mt-3">Tecnologias Utilizadas</h5>
+                            <ul class="tech-list">
+                                <li class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    <span>Python para reconhecimento facial</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    <span>MySQL para banco de dados</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    <span>HTML/CSS para interface web</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    <span>Notebook/Desktop como hardware</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="https://github.com/LYuri26/ReconhecimentoFacialPython"
+                                    class="btn btn-danger btn-sm" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github me-1"></i>Ver Projeto
+                                </a>
+                                <div class="text-muted small">
+                                    <i class="bi bi-calendar me-1"></i>2023
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chat com IA -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow project-card">
+                        <div class="card-header bg-danger text-white">
+                            <h4 class="mb-0">Chat com IA</h4>
+                            <div class="project-meta">
+                                <span class="badge bg-light text-dark me-1">PHP</span>
+                                <span class="badge bg-light text-dark">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="project-image mb-3">
+                                <img src="https://via.placeholder.com/300x200?text=AI+Chat" alt="Chat com IA"
+                                    class="img-fluid rounded">
+                            </div>
+                            <p class="card-text">Chatbot inteligente desenvolvido para o SENAI Lab, capaz de
+                                responder dúvidas sobre cursos e processos educacionais utilizando Processamento
+                                de Linguagem Natural (NLP).</p>
+
+                            <div class="language-stats mt-3">
+                                <h6 class="mb-2"><i class="bi bi-code-square me-1"></i>Linguagens:</h6>
+                                <div class="progress mb-2" style="height: 20px;">
+                                    <div class="progress-bar bg-javascript" role="progressbar" style="width: 57.1%"
+                                        aria-valuenow="57.1" aria-valuemin="0" aria-valuemax="100">JavaScript 57.1%
+                                    </div>
+                                </div>
+                                <div class="progress mb-2" style="height: 20px;">
+                                    <div class="progress-bar bg-php" role="progressbar" style="width: 27.5%"
+                                        aria-valuenow="27.5" aria-valuemin="0" aria-valuemax="100">PHP 27.5%
+                                    </div>
+                                </div>
+                                <div class="progress mb-2" style="height: 20px;">
+                                    <div class="progress-bar bg-css" role="progressbar" style="width: 11.0%"
+                                        aria-valuenow="11.0" aria-valuemin="0" aria-valuemax="100">CSS 11.0%
+                                    </div>
+                                </div>
+                                <div class="progress" style="height: 20px;">
+                                    <div class="progress-bar bg-html" role="progressbar" style="width: 4.4%"
+                                        aria-valuenow="4.4" aria-valuemin="0" aria-valuemax="100">HTML 4.4%
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5 class="project-subtitle mt-3">Principais Funcionalidades:</h5>
+                            <ul class="feature-list">
+                                <li class="d-flex align-items-start mb-2">
+                                    <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                    <span>Processamento de Linguagem Natural (NLP)</span>
+                                </li>
+                                <li class="d-flex align-items-start mb-2">
+                                    <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                    <span>Integração com base de conhecimento institucional</span>
+                                </li>
+                                <li class="d-flex align-items-start mb-2">
+                                    <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                    <span>Interface web e mobile responsiva</span>
+                                </li>
+                                <li class="d-flex align-items-start mb-2">
+                                    <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                    <span>Análise de sentimentos nas interações</span>
+                                </li>
+                                <li class="d-flex align-items-start">
+                                    <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                    <span>Geração de relatórios de interações</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="https://github.com/LYuri26/IALab" class="btn btn-danger btn-sm" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="bi bi-github me-1"></i>Ver Projeto
+                                </a>
+                                <div class="text-muted small">
+                                    <i class="bi bi-calendar me-1"></i>2023
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destaque: Compressor Web -->
+            <div class="row mb-5">
+                <div class="col-12 mb-4">
+                    <h3 class="section-subtitle mb-4"><i class="bi bi-star-fill me-2 text-warning"
+                            aria-hidden="true"></i>Projeto em Destaque</h3>
+                    <p class="section-description">Um projeto especial que merece atenção especial pelas suas
+                        funcionalidades e complexidade.</p>
+                </div>
+
+                <div class="col-12">
+                    <div class="card shadow-lg featured-project">
+                        <div class="card-header bg-gradient-primary text-white">
+                            <h3 class="mb-0">Compressor Web - Controle de Compressores via ESP32</h3>
+                            <div class="project-meta">
+                                <span class="badge bg-light text-dark me-1">ESP32</span>
+                                <span class="badge bg-light text-dark me-1">IoT</span>
+                                <span class="badge bg-light text-dark">C++</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="project-image mb-3">
+                                        <img src="https://via.placeholder.com/600x400?text=Compressor+Web"
+                                            alt="Compressor Web" class="img-fluid rounded">
+                                    </div>
+
+                                    <div class="language-stats mt-4">
+                                        <h5 class="mb-3"><i class="bi bi-code-slash me-2"></i>Distribuição de
+                                            Linguagens:</h5>
+                                        <div class="progress mb-3" style="height: 25px;">
+                                            <div class="progress-bar bg-cpp" role="progressbar" style="width: 79.6%"
+                                                aria-valuenow="79.6" aria-valuemin="0" aria-valuemax="100">
+                                                <span class="progress-text">C++ 79.6%</span>
+                                            </div>
+                                        </div>
+                                        <div class="progress" style="height: 25px;">
+                                            <div class="progress-bar bg-c" role="progressbar" style="width: 20.4%"
+                                                aria-valuenow="20.4" aria-valuemin="0" aria-valuemax="100">
+                                                <span class="progress-text">C 20.4%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="mb-3">Sistema de Controle de Compressores via ESP32</h4>
+                                    <p class="card-text">Este projeto foi desenvolvido para controlar o ligar e
+                                        desligar de compressores utilizando um ESP32. O sistema possui uma
+                                        interface web acessível via Wi-Fi, com autenticação e gerenciamento de
+                                        usuários. Ele opera tanto em modo de <strong>Access Point (AP)</strong>
+                                        quanto em modo de conexão a redes Wi-Fi locais.</p>
+
+                                    <h5 class="mt-4">Equipe de Desenvolvimento</h5>
+                                    <div class="team-members mb-4">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="bi bi-person-fill me-2"></i>
+                                                    <span>Brenda</span>
+                                                </div>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="bi bi-person-fill me-2"></i>
+                                                    <span>Davi</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="bi bi-person-fill me-2"></i>
+                                                    <span>João</span>
+                                                </div>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="bi bi-person-fill me-2"></i>
+                                                    <span>Pedro</span>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="bi bi-person-fill me-2"></i>
+                                                    <span>Sofia</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h5 class="mt-4">Principais Funcionalidades</h5>
+                                    <ul class="feature-list">
+                                        <li class="d-flex align-items-start mb-2">
+                                            <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                            <span><strong>Autenticação de usuários:</strong> Login com validação
+                                                de credenciais para acessar o painel de controle.</span>
+                                        </li>
+                                        <li class="d-flex align-items-start mb-2">
+                                            <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                            <span><strong>Controle de compressores:</strong> Interface para
+                                                ligar e desligar os compressores remotamente.</span>
+                                        </li>
+                                        <li class="d-flex align-items-start mb-2">
+                                            <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                            <span><strong>Monitoramento:</strong> Visualização de dados como
+                                                pressão, umidade e tempo de uso.</span>
+                                        </li>
+                                        <li class="d-flex align-items-start mb-2">
+                                            <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                            <span><strong>Manutenção remota:</strong> Acesso para monitoramento
+                                                de condições de operação para manutenção.</span>
+                                        </li>
+                                        <li class="d-flex align-items-start mb-2">
+                                            <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                            <span><strong>Sistema de erros:</strong> Páginas de erro
+                                                personalizadas para lidar com situações como perda de
+                                                conexão.</span>
+                                        </li>
+                                        <li class="d-flex align-items-start">
+                                            <i class="bi bi-check-circle-fill text-success me-2 mt-1"></i>
+                                            <span><strong>Modos de operação:</strong> Funciona tanto como Access
+                                                Point quanto conectado a redes Wi-Fi existentes.</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="mt-4">
+                                        <h5>Configuração do Access Point</h5>
+                                        <div class="code-block bg-dark text-light p-3 rounded mb-3">
+                                            <pre class="mb-0"><code>const char *ap_ssid = "EnergizAR"; // Nome da rede
+const char *ap_password = "12345678"; // Senha de acesso
+IPAddress local_ip(192, 168, 26, 7); // IP local
+IPAddress gateway(192, 168, 26, 1);  // Gateway
+IPAddress subnet(255, 255, 255, 0);  // Máscara de sub-rede</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="https://github.com/LYuri26/CompressorWeb" class="btn btn-primary"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github me-1"></i>Ver Projeto no GitHub
+                                </a>
+                                <div class="text-muted">
+                                    <i class="bi bi-calendar me-1"></i>2023 |
+                                    <i class="bi bi-code-square me-1 ms-2"></i>ESP32 |
+                                    <i class="bi bi-wifi me-1 ms-2"></i>IoT
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Outros Projetos -->
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <h3 class="section-subtitle mb-4"><i class="bi bi-collection me-2" aria-hidden="true"></i>Outros
+                        Projetos</h3>
+                    <p class="section-description">Projetos menores e experimentais que demonstram habilidades
+                        específicas e exploração de tecnologias.</p>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 shadow-sm project-card-sm">
+                        <div class="card-body">
+                            <div class="project-icon mb-3 text-center">
+                                <i class="bi bi-signpost text-primary" style="font-size: 2rem;"></i>
+                            </div>
+                            <h4 class="card-title text-center">Outdoor Digital</h4>
+                            <p class="card-text text-center">Sistema para exibição de mensagens em placas de LED
+                                controladas via ESP32 com interface web.</p>
+                            <div class="tech-badges text-center mb-3">
+                                <span class="badge bg-light text-dark me-1">ESP32</span>
+                                <span class="badge bg-light text-dark">IoT</span>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://github.com/LYuri26/OutdoorAvisosPlaca"
+                                    class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github me-1"></i>Ver Projeto
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 shadow-sm project-card-sm">
+                        <div class="card-body">
+                            <div class="project-icon mb-3 text-center">
+                                <i class="bi bi-shuffle text-success" style="font-size: 2rem;"></i>
+                            </div>
+                            <h4 class="card-title text-center">Sistema de Sorteio</h4>
+                            <p class="card-text text-center">Aplicativo para sorteio de nomes e números com
+                                interface amigável e personalizável.</p>
+                            <div class="tech-badges text-center mb-3">
+                                <span class="badge bg-light text-dark me-1">JavaScript</span>
+                                <span class="badge bg-light text-dark">HTML5</span>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://github.com/LYuri26/SorteioDeNomes"
+                                    class="btn btn-outline-success btn-sm" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github me-1"></i>Ver Projeto
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 shadow-sm project-card-sm">
+                        <div class="card-body">
+                            <div class="project-icon mb-3 text-center">
+                                <i class="bi bi-joystick text-warning" style="font-size: 2rem;"></i>
+                            </div>
+                            <h4 class="card-title text-center">Jogos Educativos</h4>
+                            <p class="card-text text-center">Coleção de jogos como Termo, Forca e Quiz para
+                                aprendizagem lúdica de programação.</p>
+                            <div class="tech-badges text-center mb-3">
+                                <span class="badge bg-light text-dark me-1">JavaScript</span>
+                                <span class="badge bg-light text-dark">CSS3</span>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://github.com/LYuri26/JogoTermo" class="btn btn-outline-warning btn-sm"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github me-1"></i>Ver Projetos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 shadow-sm project-card-sm">
+                        <div class="card-body">
+                            <div class="project-icon mb-3 text-center">
+                                <i class="bi bi-lightning-charge text-info" style="font-size: 2rem;"></i>
+                            </div>
+                            <h4 class="card-title text-center">Automação Residencial</h4>
+                            <p class="card-text text-center">Sistema para controle de dispositivos domésticos
+                                via ESP32 com interface web.</p>
+                            <div class="tech-badges text-center mb-3">
+                                <span class="badge bg-light text-dark me-1">ESP32</span>
+                                <span class="badge bg-light text-dark">IoT</span>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://github.com/LYuri26/AutomacaoResidencial"
+                                    class="btn btn-outline-info btn-sm" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github me-1"></i>Ver Projeto
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 section-bg">
+        <div class="container">
+            <h2 class="text-center mb-5">Contato</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8">
+                    <div class="card shadow h-100">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4 text-center">Informações para Contato</h3>
+
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <i class="bi bi-envelope-fill contact-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <h5>Email</h5>
+                                        <a href="mailto:lenonyurisilva26@gmail.com">lenonyurisilva26@gmail.com</a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item">
+                                    <i class="bi bi-telephone-fill contact-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <h5>Telefone</h5>
+                                        <a href="tel:+5531995399410">(31) 99539-9410</a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item">
+                                    <i class="bi bi-geo-alt-fill contact-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <h5>Endereço</h5>
+                                        <p>Praça Afonso Arinos, 38 - Centro, Uberaba - MG</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item">
+                                    <i class="bi bi-linkedin contact-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <h5>LinkedIn</h5>
+                                        <a href="https://www.linkedin.com/in/lenon-yuri-silva-9a609b19a/"
+                                            target="_blank"
+                                            rel="noopener noreferrer">linkedin.com/in/lenon-yuri-silva</a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item">
+                                    <i class="bi bi-github contact-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <h5>GitHub</h5>
+                                        <a href="https://github.com/LYuri26" target="_blank"
+                                            rel="noopener noreferrer">github.com/LYuri26</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <h4>Lenon Yuri Silva</h4>
+                    <p>Desenvolvedor Full Stack | Instrutor Técnico</p>
+                    <p>Combinando habilidades técnicas e visão administrativa para criar soluções inovadoras.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="social-icons mb-3">
+                        <a href="https://www.linkedin.com/in/lenon-yuri-silva-9a609b19a/" class="mx-2" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin fs-4"></i>
+                        </a>
+                        <a href="https://github.com/LYuri26" class="mx-2" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub">
+                            <i class="bi bi-github fs-4"></i>
+                        </a>
+                        <a href="mailto:lenonyurisilva26@gmail.com" class="mx-2" aria-label="Enviar email">
+                            <i class="bi bi-envelope fs-4"></i>
+                        </a>
+                    </div>
+                    <p class="mb-0">© <span id="current-year"></span> Lenon Yuri Silva. Todos os direitos
+                        reservados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript Personalizado -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
