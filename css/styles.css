@@ -991,7 +991,7 @@ section {
   border-radius: var(--bs-border-radius-sm);
 }
 
-/* Language Stats */
+/* Language Stats - Ajustes para centralizar e melhorar a visibilidade */
 .language-stats {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -1001,65 +1001,116 @@ section {
   font-size: 0.9rem;
   color: var(--bs-text-muted);
   margin-bottom: 0.75rem;
+  text-align: center;
 }
 
 .progress {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.05);
   overflow: visible;
+  height: 24px;
+  margin-bottom: 1rem;
+  position: relative;
 }
 
 .progress-bar {
   position: relative;
   border-radius: 10px;
-  font-size: 0.75rem;
-  font-weight: 500;
+  font-size: 0.85rem;
+  font-weight: 600;
   display: flex;
-  align-items: center;
   justify-content: center;
   overflow: visible;
   transition: width 1s ease-in-out;
+  height: 100%;
 }
 
 .progress-text {
   position: absolute;
-  white-space: nowrap;
+  left: 25%;
+  transform: translateX(-25%);
   color: white;
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
+/* Ajustes específicos para cores com baixo contraste */
+.bg-javascript .progress-text {
+  color: #333;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+}
+.bg-shell .progress-text {
+  color: #333;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+/* Ajuste para barras muito estreitas */
+.progress-bar[style*="width: 0%"] .progress-text,
+.progress-bar[style*="width: 1%"] .progress-text,
+.progress-bar[style*="width: 2%"] .progress-text,
+.progress-bar[style*="width: 3%"] .progress-text,
+.progress-bar[style*="width: 4%"] .progress-text,
+.progress-bar[style*="width: 5%"] .progress-text {
+  left: auto;
+  right: 0;
+  transform: none;
+  color: var(--bs-body-color);
+  text-shadow: none;
+  padding-right: 8px;
+  text-align: right;
+  width: auto;
+}
+
+/* Dark Mode Adjustments */
+[data-theme="dark"] {
+  .progress {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .progress-bar[style*="width: 0%"] .progress-text,
+  .progress-bar[style*="width: 1%"] .progress-text,
+  .progress-bar[style*="width: 2%"] .progress-text,
+  .progress-bar[style*="width: 3%"] .progress-text,
+  .progress-bar[style*="width: 4%"] .progress-text,
+  .progress-bar[style*="width: 5%"] .progress-text {
+    color: var(--bs-body-color);
+  }
+}
 /* Language Colors */
 .bg-javascript {
   background-color: #f1e05a;
-  color: #333;
+  color: #469624;
 }
 .bg-html {
   background-color: #e34c26;
-  color: white;
+  color: #469624;
 }
 .bg-css {
   background-color: #563d7c;
-  color: white;
+  color: #d820cf;
 }
 .bg-php {
   background-color: #4f5d95;
-  color: white;
+  color: #d820cf;
 }
 .bg-python {
   background-color: #3572a5;
-  color: white;
+  color: #d820cf;
 }
 .bg-shell {
   background-color: #89e051;
-  color: #333;
+  color: #d820cf;
 }
 .bg-cpp {
   background-color: #f34b7d;
-  color: white;
+  color: #469624;
 }
 .bg-c {
   background-color: #555555;
-  color: white;
+  color: #d820cf;
 }
 
 /* Code Block */
@@ -1155,6 +1206,264 @@ section {
 
   .code-block {
     background-color: #1e1e1e !important;
+  }
+}
+
+/* ================================================== */
+/* ================== CSS VARIABLES ================= */
+/* ================================================== */
+
+/* ============ LIGHT MODE VARIABLES ============ */
+:root {
+  /* Base Colors */
+  --bs-white: #ffffff;
+  --bs-black: #121212;
+  --bs-gray: #5a5a5a;
+  --bs-gray-dark: #2d2d2d;
+
+  /* Primary Colors */
+  --bs-primary: #6a3093;
+  --bs-secondary: #d64a6f;
+  --bs-accent: #2ec4e6;
+  --bs-success: #3dd978;
+
+  /* Background Colors */
+  --bs-body-bg: #f9f9f9;
+  --bs-card-bg: #ffffff;
+  --bs-navbar-bg: #252525;
+  --bs-section-bg: #f0f2f5;
+
+  /* Text Colors */
+  --bs-body-color: #333333;
+  --bs-text-muted: #666666;
+
+  /* Border Colors */
+  --bs-border-color: #e0e0e0;
+
+  /* Spacing */
+  --bs-section-padding: 5rem 0;
+  --bs-card-padding: 1.5rem;
+
+  /* Shadows */
+  --bs-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --bs-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --bs-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.1);
+
+  /* Borders */
+  --bs-border-radius: 0.5rem;
+  --bs-border-radius-sm: 0.25rem;
+
+  /* Transitions */
+  --bs-transition: all 0.25s ease;
+}
+
+/* ============ DARK MODE VARIABLES ============ */
+[data-theme="dark"] {
+  /* Primary Colors */
+  --bs-primary: #b388ff;
+  --bs-secondary: #ff6b81;
+  --bs-accent: #4fd1ff;
+  --bs-success: #6eff9e;
+
+  /* Background Colors */
+  --bs-body-bg: #1a1a1a;
+  --bs-card-bg: #2a2a2a;
+  --bs-navbar-bg: #121212;
+  --bs-section-bg: #222222;
+
+  /* Text Colors */
+  --bs-body-color: #f0f0f0;
+  --bs-text-muted: #aaaaaa;
+
+  /* Border Colors */
+  --bs-border-color: #444444;
+
+  /* Shadows */
+  --bs-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --bs-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --bs-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* ================================================== */
+/* ================== BASE STYLES =================== */
+/* ================================================== */
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  transition: var(--bs-transition);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--bs-body-color);
+  margin-bottom: 1rem;
+}
+
+.text-muted {
+  color: var(--bs-text-muted) !important;
+}
+
+a {
+  color: var(--bs-primary);
+  text-decoration: none;
+  transition: var(--bs-transition);
+}
+
+a:hover {
+  color: var(--bs-accent);
+  text-decoration: underline;
+}
+
+/* ================================================== */
+/* ================== CONTACT SECTION =============== */
+/* ================================================== */
+
+.section-bg {
+  background-color: var(--bs-section-bg);
+}
+
+#contact {
+  padding: var(--bs-section-padding);
+}
+
+#contact .card {
+  background-color: var(--bs-card-bg);
+  border: none;
+  border-radius: var(--bs-border-radius);
+  transition: var(--bs-transition);
+  box-shadow: var(--bs-shadow-sm);
+}
+
+#contact .card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--bs-shadow-lg);
+}
+
+.contact-info {
+  margin-top: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  color: var(--bs-primary);
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.contact-item h5 {
+  margin-bottom: 0.5rem;
+  color: var(--bs-primary);
+}
+
+.contact-item p,
+.contact-item a {
+  margin-bottom: 0;
+  color: var(--bs-body-color);
+}
+
+/* ================================================== */
+/* ================== FOOTER ======================== */
+/* ================================================== */
+
+footer {
+  background-color: var(--bs-navbar-bg);
+  color: var(--bs-white);
+  padding: 2rem 0;
+}
+
+footer h4 {
+  color: var(--bs-white);
+  margin-bottom: 1rem;
+}
+
+footer p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.social-icons a {
+  color: var(--bs-white);
+  font-size: 1.5rem;
+  transition: var(--bs-transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 0 0.5rem;
+}
+
+.social-icons a:hover {
+  color: var(--bs-accent);
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+/* ================================================== */
+/* ================== RESPONSIVENESS ================ */
+/* ================================================== */
+
+@media (max-width: 767.98px) {
+  #contact {
+    padding: 3rem 0;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-icon {
+    margin-bottom: 0.5rem;
+  }
+
+  footer .row > div {
+    text-align: center !important;
+    margin-bottom: 1.5rem;
+  }
+
+  footer .text-md-end {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #contact {
+    padding: 2.5rem 0;
+  }
+
+  .contact-item {
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 }
 
@@ -1257,20 +1566,6 @@ section {
   background-color: var(--bs-secondary);
   color: white;
   transform: translateY(-2px);
-}
-
-/* ============ FORM CONTROLS ============ */
-.form-control {
-  background-color: var(--bs-card-bg);
-  border-color: var(--bs-border-color);
-  color: var(--bs-body-color);
-}
-
-.form-control:focus {
-  background-color: var(--bs-card-bg);
-  border-color: var(--bs-primary);
-  box-shadow: 0 0 0 0.25rem rgba(188, 128, 245, 0.25);
-  color: var(--bs-body-color);
 }
 
 /* ============ FOOTER ============ */

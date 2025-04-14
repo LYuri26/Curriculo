@@ -133,49 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Inicializar animações
   setupScrollAnimations();
 
-  // ============ FORMULÁRIO DE CONTATO ============
-  const contactForm = document.getElementById("contactForm");
-  if (contactForm) {
-    contactForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      const submitBtn = this.querySelector('button[type="submit"]');
-      if (!submitBtn) return;
-
-      const originalText = submitBtn.innerHTML;
-      const originalDisabled = submitBtn.disabled;
-
-      // Feedback visual
-      submitBtn.innerHTML = `
-        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-        Enviando...
-      `;
-      submitBtn.disabled = true;
-
-      // Simular envio assíncrono
-      setTimeout(() => {
-        // Criar alerta de sucesso
-        const alertPlaceholder = document.createElement("div");
-        alertPlaceholder.innerHTML = `
-          <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
-            Mensagem enviada com sucesso!
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          </div>
-        `;
-
-        // Inserir alerta antes do formulário
-        contactForm.parentNode.insertBefore(alertPlaceholder, contactForm);
-
-        // Resetar formulário
-        contactForm.reset();
-
-        // Restaurar botão
-        submitBtn.innerHTML = originalText;
-        submitBtn.disabled = originalDisabled;
-      }, 1500);
-    });
-  }
-
+  // ==========
   // ============ TOOLTIPS ============
   const tooltipTriggerList = document.querySelectorAll(
     '[data-bs-toggle="tooltip"]'
