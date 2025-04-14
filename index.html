@@ -4,74 +4,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lenon Yuri Silva - Desenvolvedor e Instrutor Técnico</title>
+    <title>Lenon Yuri Silva - Desenvolvedor Full Stack e Instrutor Técnico</title>
     <meta name="description"
-        content="Portfólio profissional de Lenon Yuri Silva, Desenvolvedor e Instrutor Técnico com experiência em Java, Python, PHP e gestão de projetos.">
-    <!-- Meta tags para SEO e compartilhamento -->
-    <meta property="og:title" content="Lenon Yuri Silva - Desenvolvedor e Instrutor Técnico">
+        content="Portfólio profissional de Lenon Yuri Silva, especialista em desenvolvimento web e mobile com Java, Python, PHP e gestão de projetos ágeis.">
+
+    <!-- Meta tags para SEO e compartilhamento otimizadas -->
+    <meta property="og:title" content="Lenon Yuri Silva - Desenvolvedor Full Stack">
     <meta property="og:description"
-        content="Portfólio profissional de Lenon Yuri Silva, Desenvolvedor e Instrutor Técnico com experiência em Java, Python, PHP e gestão de projetos.">
+        content="Desenvolvedor Full Stack e Instrutor Técnico com expertise em diversas tecnologias e metodologias ágeis.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://seusite.com">
-    <meta name="theme-color" content="#8a63d2">
+    <meta property="og:image" content="https://seusite.com/images/og-image.jpg">
+    <meta name="theme-color" content="#6a3093">
 
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <!-- Favicon moderno com múltiplos tamanhos -->
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <!-- CSS Personalizado -->
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- Pré-conexão para CDNs -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <!-- Preload para melhor performance -->
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style">
-    <link rel="preload" href="css/styles.css" as="style">
+    <!-- Pré-carregamento de recursos críticos -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <!-- Fallback para caso JavaScript esteja desabilitado -->
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </noscript>
+
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar" style="opacity: 0;">
-    <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- Navbar melhorada -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#" aria-label="Página inicial">
-                <span class="d-inline-block align-middle">Lenon Yuri Silva</span>
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="#" aria-label="Página inicial">
+                <span class="d-inline-block me-2">Lenon Yuri Silva</span>
+                <span class="badge bg-accent ms-2 d-none d-lg-inline">Disponível para oportunidades</span>
             </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about"><i class="bi bi-person-fill me-1"
-                                aria-hidden="true"></i>Sobre</a>
+                        <a class="nav-link" href="#about">
+                            <i class="bi bi-person-fill me-1" aria-hidden="true"></i>
+                            <span class="d-none d-md-inline">Sobre</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#experience"><i class="bi bi-briefcase-fill me-1"
-                                aria-hidden="true"></i>Experiência</a>
+                        <a class="nav-link" href="#experience">
+                            <i class="bi bi-briefcase-fill me-1" aria-hidden="true"></i>
+                            <span class="d-none d-md-inline">Experiência</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#education"><i class="bi bi-book-fill me-1"
-                                aria-hidden="true"></i>Formação</a>
+                        <a class="nav-link" href="#education">
+                            <i class="bi bi-book-fill me-1" aria-hidden="true"></i>
+                            <span class="d-none d-md-inline">Formação</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skills"><i class="bi bi-tools me-1"
-                                aria-hidden="true"></i>Habilidades</a>
+                        <a class="nav-link" href="#skills">
+                            <i class="bi bi-tools me-1" aria-hidden="true"></i>
+                            <span class="d-none d-md-inline">Habilidades</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects"><i class="bi bi-code-square me-1"
-                                aria-hidden="true"></i>Projetos</a>
+                        <a class="nav-link" href="#projects">
+                            <i class="bi bi-code-square me-1" aria-hidden="true"></i>
+                            <span class="d-none d-md-inline">Projetos</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact"><i class="bi bi-envelope-fill me-1"
-                                aria-hidden="true"></i>Contato</a>
+                        <a class="nav-link" href="#contact">
+                            <i class="bi bi-envelope-fill me-1" aria-hidden="true"></i>
+                            <span class="d-none d-md-inline">Contato</span>
+                        </a>
                     </li>
-                    <li class="nav-item ms-2 d-flex align-items-center">
-                        <button id="themeToggle" class="btn btn-sm theme-toggle"
+                    <li class="nav-item ms-lg-2 d-flex align-items-center">
+                        <button id="themeToggle" class="btn btn-sm theme-toggle rounded-pill"
                             aria-label="Alternar modo escuro/claro">
                             <i class="bi bi-moon-fill"></i>
+                            <span class="d-none d-lg-inline ms-1">Tema</span>
                         </button>
                     </li>
                 </ul>
@@ -79,30 +107,90 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section redesenhada -->
     <header class="hero text-center py-5">
-        <div class="container py-5">
-            <h1 class="display-4 fw-bold">Lenon Yuri Silva</h1>
-            <p class="lead mb-4">Desenvolvedor Full Stack | Instrutor Técnico SENAI</p>
-            <div class="hero-badges mb-4">
-                <span class="badge me-2"><i class="bi bi-database"></i> MySQL</span>
-                <span class="badge me-2"><i class="bi bi-filetype-java"></i> Java</span>
-                <span class="badge me-2"><i class="bi bi-filetype-js"></i> JavaScript</span>
-                <span class="badge me-2"><i class="bi bi-filetype-php"></i> PHP</span>
-                <span class="badge me-2"><i class="bi bi-filetype-c"></i> C</span>
-                <span class="badge me-2"><i class="bi bi-filetype-cpp"></i> C++</span>
-                <span class="badge me-2"><i class="bi bi-filetype-py"></i> Python</span>
-                <span class="badge me-2"><i class="bi bi-kanban"></i> SCRUM</span>
-                <span class="badge me-2"><i class="bi bi-kanban"></i> Trello</span>
-                <span class="badge me-2"><i class="bi bi-github"></i> GitHub</span>
-                <span class="badge me-2"><i class="bi bi-filetype-rs"></i> Rust</span>
-                <span class="badge me-2"><i class="bi bi-filetype-html"></i> HTML</span>
-                <span class="badge me-2"><i class="bi bi-filetype-css"></i> CSS</span>
-                <span class="badge me-2"><i class="bi bi-ubuntu"></i> Ubuntu</span>
-                <span class="badge me-2"><i class="bi bi-terminal"></i> Shell Script</span>
-                <span class="badge me-2"><i class="bi bi-react"></i> React</span>
-                <span class="badge"><i class="bi bi-laravel"></i> Laravel</span>
+        <div class="container py-5 position-relative">
+            <!-- Efeito de partículas (opcional) -->
+            <div class="particles" id="particles-js" aria-hidden="true"></div>
+
+            <div class="hero-content position-relative">
+                <h1 class="display-4 fw-bold mb-3 animate__animated animate__fadeInDown">Lenon Yuri Silva</h1>
+                <p class="lead mb-4 fs-4 animate__animated animate__fadeIn animate__delay-1s">
+                    <span class="typed"
+                        data-typed-items="Desenvolvedor Full Stack, Instrutor Técnico SENAI, Especialista em Java, Especialista em PHP"></span>
+                </p>
+
+                <div class="hero-badges mb-4 animate__animated animate__fadeIn animate__delay-2s">
+                    <div class="badge-cloud">
+                        <span class="badge bg-primary-soft me-2 mb-2">
+                            <i class="bi bi-database me-1"></i> MySQL
+                        </span>
+                        <span class="badge bg-primary-soft me-2 mb-2">
+                            <i class="bi bi-filetype-java me-1"></i> Java
+                        </span>
+                        <span class="badge bg-primary-soft me-2 mb-2">
+                            <i class="bi bi-filetype-js me-1"></i> JavaScript
+                        </span>
+                        <span class="badge bg-primary-soft me-2 mb-2">
+                            <i class="bi bi-filetype-php me-1"></i> PHP
+                        </span>
+                        <span class="badge bg-primary-soft me-2 mb-2">
+                            <i class="bi bi-filetype-c me-1"></i> C
+                        </span>
+                        <span class="badge bg-primary-soft me-2 mb-2">
+                            <i class="bi bi-filetype-cpp me-1"></i> C++
+                        </span>
+                        <span class="badge bg-primary-soft me-2 mb-2">
+                            <i class="bi bi-filetype-py me-1"></i> Python
+                        </span>
+                        <span class="badge bg-primary-soft me-2 mb-2">
+                            <i class="bi bi-kanban me-1"></i> SCRUM
+                        </span>
+                        <span class="badge bg-primary-soft me-2 mb-2">
+                            <i class="bi bi-kanban me-1"></i> Trello
+                        </span>
+                        <span class="badge bg-primary-soft me-2 mb-2">
+                            <i class="bi bi-github me-1"></i> GitHub
+                        </span>
+                        <span class="badge bg-primary-soft me-2 mb-2">
+                            <i class="bi bi-filetype-rs me-1"></i> Rust
+                        </span>
+                        <span class="badge bg-primary-soft me-2 mb-2">
+                            <i class="bi bi-filetype-html me-1"></i> HTML
+                        </span>
+                        <span class="badge bg-primary-soft me-2 mb-2">
+                            <i class="bi bi-filetype-css me-1"></i> CSS
+                        </span>
+                        <span class="badge bg-primary-soft me-2 mb-2">
+                            <i class="bi bi-ubuntu me-1"></i> Ubuntu
+                        </span>
+                        <span class="badge bg-primary-soft me-2 mb-2">
+                            <i class="bi bi-terminal me-1"></i> Shell Script
+                        </span>
+                        <span class="badge bg-primary-soft me-2 mb-2">
+                            <i class="bi bi-react me-1"></i> React
+                        </span>
+                        <span class="badge bg-primary-soft me-2 mb-2">
+                            <i class="bi bi-laravel me-1"></i> Laravel
+                        </span>
+                    </div>
+                </div>
+                <div class="hero-cta animate__animated animate__fadeInUp animate__delay-3s">
+                    <a href="#contact" class="btn btn-primary btn-lg me-3">
+                        <i class="bi bi-envelope me-1"></i> Contato
+                    </a>
+                    <a href="#projects" class="btn btn-outline-light btn-lg">
+                        <i class="bi bi-code-square me-1"></i> Ver Projetos
+                    </a>
+                </div>
             </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <a href="#about" class="scroll-down" aria-label="Role para baixo">
+                <i class="bi bi-chevron-down"></i>
+            </a>
         </div>
     </header>
 
@@ -163,10 +251,6 @@
                             <p class="mb-0">"Acredito que a tecnologia deve ser acessível e transformadora, combinando
                                 excelência técnica com impacto social."</p>
                         </blockquote>
-                    </div>
-                    <div class="mt-4">
-                        <a href="#contact" class="btn btn-primary me-2">Entrar em Contato</a>
-                        <a href="#projects" class="btn btn-outline-primary">Ver Projetos</a>
                     </div>
                 </div>
                 <div class="col-lg-6 mt-5 mt-lg-0">

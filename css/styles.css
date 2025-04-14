@@ -1,182 +1,146 @@
-/* ================================================== */
-/* ================== CSS VARIABLES ================= */
-/* ================================================== */
-
-/* ============ LIGHT MODE VARIABLES ============ */
+/* ============ VARIÁVEIS CSS ATUALIZADAS ============ */
 :root {
-  /* Base Colors */
+  /* Cores base */
   --bs-white: #ffffff;
   --bs-black: #121212;
   --bs-gray: #5a5a5a;
   --bs-gray-dark: #2d2d2d;
 
-  /* Primary Colors */
+  /* Cores principais */
   --bs-primary: #6a3093;
+  --bs-primary-light: #8a4db3;
+  --bs-primary-dark: #4b1d6e;
   --bs-secondary: #d64a6f;
   --bs-accent: #2ec4e6;
   --bs-success: #3dd978;
 
-  /* Background Colors */
+  /* Cores de fundo */
   --bs-body-bg: #f9f9f9;
   --bs-card-bg: #ffffff;
-  --bs-navbar-bg: #252525;
+  --bs-navbar-bg: rgba(37, 37, 37, 0.9);
   --bs-section-bg: #f0f2f5;
 
-  /* Text Colors */
+  /* Cores de texto */
   --bs-body-color: #333333;
   --bs-text-muted: #666666;
 
-  /* Border Colors */
+  /* Bordas */
   --bs-border-color: #e0e0e0;
+  --bs-border-radius: 0.5rem;
+  --bs-border-radius-sm: 0.25rem;
 
-  /* Gradients */
-  --bs-hero-bg: linear-gradient(135deg, #5c4bdf 0%, #d23369 100%);
-
-  /* Components */
-  --bs-btn-bg: #d64a6f;
-  --bs-btn-hover: #c23a5f;
-  --bs-btn-outline: #d64a6f;
-  --bs-btn-outline-hover: #f8e8ec;
-  --bs-badge-bg: #6a3093;
-  --bs-badge-color: #ffffff;
-  --bs-timeline-badge: #d64a6f;
-
-  /* Spacing */
-  --bs-section-padding: 5rem 0;
-  --bs-card-padding: 1.5rem;
-
-  /* Shadows */
+  /* Sombras */
   --bs-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
   --bs-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
   --bs-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.1);
 
-  /* Borders */
-  --bs-border-radius: 0.5rem;
-  --bs-border-radius-sm: 0.25rem;
+  /* Espaçamento */
+  --bs-section-padding: 5rem 0;
+  --bs-card-padding: 1.5rem;
 
-  /* Transitions */
-  --bs-transition: all 0.25s ease;
+  /* Transições */
+  --bs-transition: all 0.3s ease;
 }
 
-/* ============ DARK MODE VARIABLES ============ */
 [data-theme="dark"] {
-  /* Primary Colors */
   --bs-primary: #b388ff;
+  --bs-primary-light: #c9a6ff;
+  --bs-primary-dark: #8a63d2;
   --bs-secondary: #ff6b81;
   --bs-accent: #4fd1ff;
   --bs-success: #6eff9e;
-
-  /* Background Colors */
   --bs-body-bg: #1a1a1a;
   --bs-card-bg: #2a2a2a;
-  --bs-navbar-bg: #121212;
+  --bs-navbar-bg: rgba(18, 18, 18, 0.9);
   --bs-section-bg: #222222;
-
-  /* Text Colors */
   --bs-body-color: #f0f0f0;
   --bs-text-muted: #aaaaaa;
-
-  /* Border Colors */
   --bs-border-color: #444444;
-
-  /* Components */
-  --bs-btn-bg: #ff6b81;
-  --bs-btn-hover: #ff4d6d;
-  --bs-btn-outline: #ff6b81;
-  --bs-btn-outline-hover: #3a0d3a;
-  --bs-badge-bg: #4a148c;
-  --bs-badge-color: #ffffff;
-  --bs-timeline-badge: #ff6b81;
-
-  /* Shadows */
   --bs-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
   --bs-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
   --bs-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
-/* ================================================== */
-/* ================== BASE STYLES =================== */
-/* ================================================== */
-
-/* ============ GLOBAL STYLES ============ */
+/* ============ ESTILOS GLOBAIS MELHORADOS ============ */
 body {
-  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
   background-color: var(--bs-body-bg);
   color: var(--bs-body-color);
   transition: var(--bs-transition);
-  padding-top: 56px;
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
-/* ============ TYPOGRAPHY ============ */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--bs-body-color);
-  margin-bottom: 1rem;
-}
-
-.text-muted {
-  color: var(--bs-text-muted) !important;
-}
-
-/* ============ LINKS ============ */
-a {
-  color: var(--bs-primary);
-  text-decoration: none;
-  transition: var(--bs-transition);
-}
-
-a:hover {
-  color: var(--bs-accent);
-  text-decoration: underline;
-}
-
-/* ================================================== */
-/* ================== COMPONENTS ==================== */
-/* ================================================== */
-
-/* ============ NAVBAR ============ */
+/* ============ NAVBAR MELHORADA ============ */
 .navbar {
-  background-color: var(--bs-navbar-bg) !important;
+  background-color: var(--bs-navbar-bg);
+  backdrop-filter: blur(10px);
   box-shadow: var(--bs-shadow-sm);
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  padding: 0.75rem 0;
 }
 
 .navbar-brand {
-  font-weight: 600;
+  font-weight: 700;
   color: var(--bs-white) !important;
+  font-size: 1.25rem;
+}
+
+.navbar-brand .badge {
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 0.35rem 0.65rem;
+  background-color: var(--bs-accent);
+  color: var(--bs-black);
 }
 
 .nav-link {
   color: rgba(255, 255, 255, 0.9) !important;
   font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  border-radius: var(--bs-border-radius);
+  transition: var(--bs-transition);
 }
 
 .nav-link:hover,
 .nav-link.active {
   color: var(--bs-white) !important;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* ============ THEME TOGGLE ============ */
+.nav-link i {
+  margin-right: 0.5rem;
+}
+
+/* ============ BOTÃO DE TEMA ============ */
 .theme-toggle {
   background-color: var(--bs-secondary);
   color: var(--bs-white);
+  border: none;
+  transition: var(--bs-transition);
+  padding: 0.5rem 1rem;
 }
 
 .theme-toggle:hover {
   background-color: var(--bs-accent);
+  transform: translateY(-2px);
 }
 
-/* ============ HERO SECTION ============ */
+/* ============ HERO SECTION MELHORADA ============ */
 .hero {
-  background: var(--bs-hero-bg);
+  background: linear-gradient(
+    135deg,
+    var(--bs-primary-dark) 0%,
+    var(--bs-secondary) 100%
+  );
   color: var(--bs-white);
   padding: var(--bs-section-padding);
   position: relative;
   overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .hero::before {
@@ -187,17 +151,252 @@ a:hover {
   width: 100%;
   height: 100%;
   background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==");
+  opacity: 0.5;
 }
 
-.profile-img {
-  border: 4px solid var(--bs-white);
-  box-shadow: var(--bs-shadow-md);
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero .lead {
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+/* Nuvem de badges */
+.badge-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.badge {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  margin: 0.25rem;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: var(--bs-transition);
 }
 
-.profile-img:hover {
-  transform: scale(1.05);
-  box-shadow: var(--bs-shadow-lg);
+.badge:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+.badge i {
+  margin-right: 0.25rem;
+}
+
+/* Botões de ação */
+.hero-cta {
+  margin-top: 2rem;
+}
+
+.btn-primary {
+  background-color: var(--bs-white);
+  color: rgb(233, 11, 241);
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border-radius: 50px;
+  transition: var(--bs-transition);
+}
+
+.btn-primary:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+.btn-outline-light {
+  border: 2px solid white;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border-radius: 50px;
+  transition: var(--bs-transition);
+}
+
+.btn-outline-light:hover {
+  background-color: white;
+  color: var(--bs-primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Indicador de scroll */
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.scroll-down {
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 2.5rem;
+  animation: bounce 2s infinite;
+  transition: var(--bs-transition);
+}
+
+.scroll-down:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(5px);
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* ============ ANIMAÇÕES ============ */
+.animate__animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animate__fadeInDown {
+  animation-name: fadeInDown;
+}
+
+.animate__fadeIn {
+  animation-name: fadeIn;
+}
+
+.animate__fadeInUp {
+  animation-name: fadeInUp;
+}
+
+.animate__delay-1s {
+  animation-delay: 1s;
+}
+
+.animate__delay-2s {
+  animation-delay: 2s;
+}
+
+.animate__delay-3s {
+  animation-delay: 3s;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* ============ RESPONSIVIDADE ============ */
+@media (max-width: 991.98px) {
+  .hero {
+    min-height: auto;
+    padding: 8rem 0 6rem;
+  }
+
+  .navbar {
+    backdrop-filter: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero {
+    padding: 7rem 0 5rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero .lead {
+    font-size: 1.25rem;
+  }
+
+  .badge {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .hero-cta .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .hero-cta .btn:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero {
+    padding: 6rem 0 4rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .navbar-brand .badge {
+    display: none;
+  }
 }
 
 /* ============ CARDS ============ */
@@ -410,8 +609,8 @@ section {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background-color: var(--bs-timeline-badge);
-  color: var(--bs-white);
+  background-color: rgb(147, 75, 230);
+  color: rgb(0, 217, 255);
   display: flex;
   align-items: center;
   justify-content: center;
